@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import UnitedStatesFlag from "../../assets/united_states_flag.png";
+import LogoImage from "../../assets/Amazon_signIn_Logo.png";
+import Amazon_Symbol_footer from "../../assets/Amazon_Symbol_footer.jpg";
 
 function Footer() {
   const backToTop = () => {
@@ -11,7 +13,7 @@ function Footer() {
   };
 
   return (
-    <footer className="bg-[#232f3e] text-white">
+    <footer className="bg-[#233448] text-white">
       {/* Back to Top */}
       <button
         onClick={backToTop}
@@ -86,7 +88,9 @@ function Footer() {
 
         {/* Payment Products */}
         <div>
-          <h3 className="mb-4 text-lg font-bold text-xl">Amazon Payment Products</h3>
+          <h3 className="mb-4 text-lg font-bold text-xl">
+            Amazon Payment Products
+          </h3>
 
           <ul className="space-y-3 text-lg text-gray-300">
             <li>
@@ -152,8 +156,11 @@ function Footer() {
 
       {/* Logo and Options */}
       <div className="flex flex-col items-center justify-center gap-5 px-6 py-8 sm:flex-row">
-        <Link to="/" className="text-3xl font-bold">
-          amazon<span className="text-[#ff9900]">⌁</span>
+        <Link
+          to="/"
+          className="rounded border border-gray-500 px-2 text-sm hover:border-white"
+        >
+          <img src={Amazon_Symbol_footer} alt="" className="w-[65px]" />
         </Link>
 
         <button className="rounded border border-gray-500 px-5 py-2 text-sm hover:border-white">
